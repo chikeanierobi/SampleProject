@@ -11,7 +11,11 @@ public class practice{
         System.out.println("Enter last name of the author of the program: ");
         String lName = scnr.next();
 
+        System.out.println("Enter your age: ");
+        int age = scnr.nextInt();
+
         System.out.println("Author of the program is " + lName.toUpperCase() + " , " + fName);
+        System.out.printf("The author is %d years old", age);
 
     }
 }

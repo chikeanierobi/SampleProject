@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class practice{
     public static void main(String[] argv){
         Scanner scnr = new Scanner(System.in);
-        System.out.println("First java program!");
+        System.out.println("First java program! Let's see who the author of the program is");
 
         System.out.println("Enter first name of the author of the program: ");
         String fName = scnr.next();

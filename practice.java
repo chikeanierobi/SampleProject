@@ -36,6 +36,7 @@ public class practice{
         System.out.println("");
         System.out.println("The author can be reached at " + "+ " + countryCode + " (" + areaCode + ") " + prefix + "-" + lineNum);
 
+        System.out.println("Now we can go ahead.");
         scnr.close();
     }
 }

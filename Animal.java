@@ -12,7 +12,15 @@ public class Animal {
     }
 
     public void printInfo(){
-        System.out.println("This animal is a " + age + "-year-old " +  type + " coloured " + color +  " of size " + size + ".");
+        if (size == 'S'){
+            System.out.println("This animal is a " + age + "-year-old " +  type.toLowerCase() + " coloured " + color.toLowerCase() +  " and small in size.");
+        }
+        else if (size == 'M'){
+            System.out.println("This animal is a " + age + "-year-old " +  type.toLowerCase() + " coloured " + color.toLowerCase() +  " and medium in size.");
+        }
+        else if (size == 'L'){
+            System.out.println("This animal is a " + age + "-year-old " +  type.toLowerCase() + " coloured " + color.toLowerCase() +  " and large in size.");
+        }
     }
     
     

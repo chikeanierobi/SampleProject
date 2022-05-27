@@ -2,6 +2,8 @@ import java.io.*;
 import java.util.Scanner;
 public class practice{
     public static void main(String[] argv){
+        int[] array1;
+        int array2[] = new int[10];
         Scanner scnr = new Scanner(System.in);
         System.out.println("First java program! Let's see who the author of the program is");
 
@@ -37,6 +39,25 @@ public class practice{
         System.out.println("The author can be reached at " + "+ " + countryCode + " (" + areaCode + ") " + prefix + "-" + lineNum);
 
         System.out.println("Now we can go ahead.");
-        scnr.close();
+        
+        
+        for (int i = 0; i < array2.length; i++){
+            System.out.println("Enter a number from 1 to 100");
+            int userNum;
+            // Scanner scnr1 = new Scanner(System.in);
+            userNum = scnr.nextInt();
+            if ((userNum >= 0) && (userNum <= 100)){
+                array2[i]=userNum;
+            }
+            else{
+                System.out.println("Error!!! Number is not within specified range, please enter a valid number");
+                i--;
+            }
+            //scnr1.close();
+        }
+
+        for (int i = 0; i < array2.length; i++){
+            System.out.println("Number " + (i+1) + " in array : " + array2[i]);
+        }
     }
 }
